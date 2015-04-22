@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ensab/Pro/Git/Dev/Duet/Shield-0.4/Shield.sch)
-    (date "Wed 25 Mar 2015 17:32:31 GMT")
+    (date "Wed 22 Apr 2015 11:39:14 BST")
     (tool "eeschema (2013-05-18 BZR 4017)-stable"))
   (components
     (comp (ref C5)
