@@ -37,7 +37,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 4
 Title "Duet"
-Date "25 mar 2015"
+Date "11 jun 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
@@ -1693,9 +1693,9 @@ F 3 "" H 2650 6600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 11000 6000 2    60   ~ 0
-E2 Stepper Driver
+E4 Stepper Driver
 Text Notes 5700 6000 2    60   ~ 0
-E1 Stepper Driver
+E3 Stepper Driver
 Text GLabel 10650 9050 2    60   Input ~ 0
 E4_REF
 Text GLabel 5400 9050 2    60   Input ~ 0
