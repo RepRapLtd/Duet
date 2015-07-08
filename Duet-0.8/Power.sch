@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "Duet"
-Date "18 mar 2015"
+Date "8 jul 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
@@ -389,7 +389,7 @@ L R R60
 U 1 1 54EF3DF7
 P 8800 2050
 F 0 "R60" V 8880 2050 50  0000 C CNN
-F 1 "3K3" V 8800 2050 50  0000 C CNN
+F 1 "4K7" V 8800 2050 50  0000 C CNN
 F 2 "" H 8800 2050 60  0001 C CNN
 F 3 "" H 8800 2050 60  0001 C CNN
 	1    8800 2050

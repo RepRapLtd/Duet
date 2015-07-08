@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Wed 18 Mar 2015 11:32:19 GMT
+Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Wed 08 Jul 2015 18:03:54 BST
 
 BeginCmp
 TimeStamp = /50656780/54B946B7;
@@ -927,22 +927,15 @@ EndCmp
 BeginCmp
 TimeStamp = /50656780/54F06CF9;
 Reference = J20;
-ValeurCmp = POWER IN;
+ValeurCmp = POWER;
 IdModule  = TERM_2-WAY_24A_7.5mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /50523307/505F8BB9;
-Reference = J21;
-ValeurCmp = JTAG;
-IdModule  = MICRO_5x2;
-EndCmp
-
-BeginCmp
-TimeStamp = /50577C6A/51167B97;
+TimeStamp = /50656780/559D50DB;
 Reference = J22;
-ValeurCmp = USB;
-IdModule  = uUSB_AB;
+ValeurCmp = POWER;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
@@ -985,6 +978,13 @@ TimeStamp = /50656780/53C6F476;
 Reference = J28;
 ValeurCmp = Probe;
 IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50577C6A/559D59B8;
+Reference = J29;
+ValeurCmp = USB;
+IdModule  = USB_B;
 EndCmp
 
 BeginCmp
@@ -1466,7 +1466,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50522538/54EF3DF7;
 Reference = R60;
-ValeurCmp = 3K3;
+ValeurCmp = 4K7;
 IdModule  = R_0603;
 EndCmp
 
@@ -1614,13 +1614,6 @@ BeginCmp
 TimeStamp = /50523307/53B5ADFC;
 Reference = R81;
 ValeurCmp = 10K;
-IdModule  = R_0603;
-EndCmp
-
-BeginCmp
-TimeStamp = /50577C6A/53B1808A;
-Reference = R82;
-ValeurCmp = 0R;
 IdModule  = R_0603;
 EndCmp
 
