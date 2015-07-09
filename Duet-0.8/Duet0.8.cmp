@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Wed 08 Jul 2015 22:20:55 BST
+Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Thu 09 Jul 2015 12:10:44 BST
 
 BeginCmp
 TimeStamp = /50656780/54B946B7;
@@ -932,6 +932,13 @@ IdModule  = TERM_2-WAY_24A_7.5mm;
 EndCmp
 
 BeginCmp
+TimeStamp = /50522538/559E5E3E;
+Reference = J21;
+ValeurCmp = 12V_ref;
+IdModule  = Vref;
+EndCmp
+
+BeginCmp
 TimeStamp = /50656780/559D50DB;
 Reference = J22;
 ValeurCmp = POWER;
@@ -985,6 +992,20 @@ TimeStamp = /50577C6A/559D59B8;
 Reference = J29;
 ValeurCmp = USB;
 IdModule  = USB_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /50522538/559E5E2F;
+Reference = J30;
+ValeurCmp = 5V_ref;
+IdModule  = Vref;
+EndCmp
+
+BeginCmp
+TimeStamp = /50522538/559E5E20;
+Reference = J31;
+ValeurCmp = 3v3_ref;
+IdModule  = Vref;
 EndCmp
 
 BeginCmp
@@ -1636,13 +1657,6 @@ TimeStamp = /50522538/54EF3E15;
 Reference = R84;
 ValeurCmp = 470R;
 IdModule  = D_0603;
-EndCmp
-
-BeginCmp
-TimeStamp = /50523307/50F1C331;
-Reference = S2;
-ValeurCmp = MCU ERASE;
-IdModule  = SW_SIDE;
 EndCmp
 
 BeginCmp
