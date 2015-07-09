@@ -37,7 +37,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 3 4
 Title "Duet"
-Date "11 jun 2015"
+Date "9 jul 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
@@ -495,8 +495,6 @@ Text GLabel 1600 1600 0    60   BiDi ~ 0
 URXD
 Text GLabel 1600 1750 0    60   BiDi ~ 0
 UTXD
-Text GLabel 1600 1150 0    60   Input ~ 0
-RESET
 $Comp
 L CONN7 J9
 U 1 1 5092E0DC
@@ -1294,4 +1292,6 @@ Wire Wire Line
 	1600 9750 1600 9900
 Wire Wire Line
 	1600 9650 1800 9650
+Text GLabel 1600 1150 0    60   Input ~ 0
+V_IN
 $EndSCHEMATC
