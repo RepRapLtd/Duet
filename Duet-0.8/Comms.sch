@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "Duet"
-Date "9 jul 2015"
+Date "17 jul 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
@@ -169,7 +169,7 @@ L SP2525A U10
 U 1 1 51167A6D
 P 2400 3700
 F 0 "U10" H 2400 3750 70  0000 C CNN
-F 1 "SP2525A" H 2400 3600 70  0000 C CNN
+F 1 "SP2525A-1" H 2400 3600 70  0000 C CNN
 F 2 "" H 2400 3700 60  0001 C CNN
 F 3 "" H 2400 3700 60  0001 C CNN
 	1    2400 3700
