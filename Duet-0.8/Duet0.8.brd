@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Wed 22 Jul 2015 12:10:23 BST
+PCBNEW-BOARD Version 2 date Thu 23 Jul 2015 15:26:17 BST
 
 # Created by Pcbnew(2013-05-18 BZR 4017)-stable
 
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "22 jul 2015"
+Date "23 jul 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -18307,7 +18307,7 @@ $EndDRAWSEGMENT
 $TEXTPCB
 Te "GND"
 nl ""
-nl "RST"
+nl "RST (VIN)"
 nl ""
 nl "TWCK0"
 nl ""
@@ -18404,15 +18404,15 @@ $EndTEXTPCB
 $TEXTPCB
 Te "BED HEATER"
 nl ""
-nl "VIN     V- "
-Po 156.3878 39.2684 1.00076 1.00076 0.1524 0
+nl "V-       VIN "
+Po 152.908 40.386 1.00076 1.00076 0.1524 0
 De 20 0 0 Normal
 $EndTEXTPCB
 $TEXTPCB
 Te "POWER IN"
 nl ""
-nl "GND       VIN"
-Po 124.5616 38.608 1.00076 1.00076 0.1524 0
+nl "VIN        GND"
+Po 125.73 42.545 1.00076 1.00076 0.1524 0
 De 20 0 0 Normal
 $EndTEXTPCB
 $TEXTPCB
