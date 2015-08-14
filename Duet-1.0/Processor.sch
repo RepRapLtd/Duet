@@ -31,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:FE
 LIBS:Shield-cache
+LIBS:emaker
+LIBS:SparkFun
 LIBS:Duet1.0-cache
 EELAYER 27 0
 EELAYER END

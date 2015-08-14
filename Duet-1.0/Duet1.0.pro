@@ -1,6 +1,6 @@
-update=Fri 14 Aug 2015 11:26:30 BST
+update=Fri 14 Aug 2015 15:03:32 BST
 version=1
-last_client=eeschema
+last_client=cvpcb
 [general]
 version=1
 [pcbnew]
@@ -25,12 +25,9 @@ LibName1=FE Footprints
 LibName2=Duet_logo_text_conv
 LibName3=connect
 LibName4=SPADE-4910
-LibDir=
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName5=emaker
+LibName6=SparkFun
+LibDir=../../../../../Desktop/RepRapPro/Git/Dev/Duet/kicadlibs
 [eeschema]
 version=1
 LibDir=./;../kicadlibs
@@ -72,3 +69,10 @@ LibName29=contrib
 LibName30=valves
 LibName31=FE
 LibName32=Shield-cache
+LibName33=emaker
+LibName34=SparkFun
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

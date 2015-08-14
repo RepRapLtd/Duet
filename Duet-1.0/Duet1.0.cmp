@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Thu 09 Jul 2015 12:10:44 BST
+Cmp-Mod V01 Created by CvPcb (2013-05-18 BZR 4017)-stable date = Fri 14 Aug 2015 15:05:46 BST
 
 BeginCmp
 TimeStamp = /50656780/54B946B7;
@@ -17,7 +17,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50522538/50522565;
 Reference = C3;
-ValeurCmp = 100u;
+ValeurCmp = 470u;
 IdModule  = C_ELEC_6.3x7.7;
 EndCmp
 
@@ -666,6 +666,13 @@ IdModule  = C_0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /50522538/55CDF7BB;
+Reference = C96;
+ValeurCmp = 100u;
+IdModule  = C_ELEC_6.3x7.7;
+EndCmp
+
+BeginCmp
 TimeStamp = /50522538/5116BBAA;
 Reference = D1;
 ValeurCmp = SS3P4;
@@ -789,6 +796,13 @@ TimeStamp = /50522538/54EF3E0F;
 Reference = D18;
 ValeurCmp = red LED;
 IdModule  = D_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50522538/55CDFB0E;
+Reference = D19;
+ValeurCmp = SS14M;
+IdModule  = uSMA;
 EndCmp
 
 BeginCmp
@@ -1020,6 +1034,13 @@ TimeStamp = /50522538/52209EAB;
 Reference = JP9;
 ValeurCmp = 5V_EN;
 IdModule  = JUMPER;
+EndCmp
+
+BeginCmp
+TimeStamp = /50522538/55CDFB01;
+Reference = L1;
+ValeurCmp = L_MINI;
+IdModule  = ;
 EndCmp
 
 BeginCmp
@@ -1779,9 +1800,9 @@ IdModule  = SOT-223;
 EndCmp
 
 BeginCmp
-TimeStamp = /50522538/53B01DB6;
+TimeStamp = /50522538/55CDF7DB;
 Reference = U3;
-ValeurCmp = MC7805CDTG;
+ValeurCmp = LM2596;
 IdModule  = TO-252;
 EndCmp
 
@@ -1830,7 +1851,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50577C6A/51167A6D;
 Reference = U10;
-ValeurCmp = SP2525A;
+ValeurCmp = SP2525A-1;
 IdModule  = SOIC-8;
 EndCmp
 
