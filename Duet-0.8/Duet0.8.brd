@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Thu 23 Jul 2015 15:26:17 BST
+PCBNEW-BOARD Version 2 date Fri 14 Aug 2015 10:59:33 BST
 
 # Created by Pcbnew(2013-05-18 BZR 4017)-stable
 
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "23 jul 2015"
+Date "14 aug 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -18307,7 +18307,7 @@ $EndDRAWSEGMENT
 $TEXTPCB
 Te "GND"
 nl ""
-nl "RST (VIN)"
+nl "VIN"
 nl ""
 nl "TWCK0"
 nl ""
