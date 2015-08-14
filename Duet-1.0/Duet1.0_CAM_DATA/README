@@ -1,0 +1,13 @@
+Copper Layer Sequence
+=====================
+
+There are four Gerbers for the copper layers of this PCB.  It is important that they
+be in this sequence from the front component layer to the back:
+
+1. Dueta.b-Front.gtl
+2. Dueta.b-Inner2.gbr
+3. Dueta.b-Inner3.gbr
+4. Dueta.b-Back.gbl
+
+where a.b is the version number.
+
