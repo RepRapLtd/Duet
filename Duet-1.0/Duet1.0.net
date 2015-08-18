@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ensab/Pro/Git/Dev/Duet/Duet-1.0/Duet1.0.sch)
-    (date "Fri 14 Aug 2015 14:56:07 BST")
+    (date "Tue 18 Aug 2015 15:30:00 BST")
     (tool "eeschema (2013-05-18 BZR 4017)-stable"))
   (components
     (comp (ref C84)

@@ -1,6 +1,6 @@
-update=Fri 14 Aug 2015 15:03:32 BST
+update=Fri 14 Aug 2015 15:17:55 BST
 version=1
-last_client=cvpcb
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -28,6 +28,11 @@ LibName4=SPADE-4910
 LibName5=emaker
 LibName6=SparkFun
 LibDir=../../../../../Desktop/RepRapPro/Git/Dev/Duet/kicadlibs
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=./;../kicadlibs
@@ -71,8 +76,3 @@ LibName31=FE
 LibName32=Shield-cache
 LibName33=emaker
 LibName34=SparkFun
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
