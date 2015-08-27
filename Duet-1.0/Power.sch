@@ -40,7 +40,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "Duet"
-Date "14 aug 2015"
+Date "27 aug 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
@@ -556,7 +556,7 @@ L C C96
 U 1 1 55CDF7BB
 P 5550 2000
 F 0 "C96" H 5600 2100 50  0000 L CNN
-F 1 "100u" H 5600 1900 50  0000 L CNN
+F 1 "220u" H 5600 1900 50  0000 L CNN
 F 2 "" H 5550 2000 60  0001 C CNN
 F 3 "" H 5550 2000 60  0001 C CNN
 F 4 "35V" H 5600 1830 50  0000 L CNN "Voltage"
