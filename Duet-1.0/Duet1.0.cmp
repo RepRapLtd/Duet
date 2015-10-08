@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Thu 27 Aug 2015 21:29:41 BST
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Thu Oct  8 12:18:47 2015
 
 BeginCmp
 TimeStamp = /50656780/54B946B7;
@@ -15,10 +15,10 @@ IdModule  = C_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /50522538/50522565;
+TimeStamp = /50522538/56164E6E;
 Reference = C3;
 ValeurCmp = 470u;
-IdModule  = C_ELEC_6.3x7.7;
+IdModule  = C_ELEC_10;
 EndCmp
 
 BeginCmp
@@ -29,9 +29,9 @@ IdModule  = C_0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /50522538/53B02FA8;
+TimeStamp = /50522538/56164E62;
 Reference = C5;
-ValeurCmp = 0u33;
+ValeurCmp = 0.33u;
 IdModule  = C_0805;
 EndCmp
 
@@ -666,9 +666,9 @@ IdModule  = C_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /50522538/55CDF7BB;
+TimeStamp = /50522538/56164E74;
 Reference = C96;
-ValeurCmp = 100u;
+ValeurCmp = 220u;
 IdModule  = C_ELEC_6.3x7.7;
 EndCmp
 
@@ -801,7 +801,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50522538/55CDFB0E;
 Reference = D19;
-ValeurCmp = SS14M;
+ValeurCmp = SS54;
 IdModule  = B520;
 EndCmp
 
@@ -1039,7 +1039,7 @@ EndCmp
 BeginCmp
 TimeStamp = /50522538/55CDFB01;
 Reference = L1;
-ValeurCmp = L_MINI;
+ValeurCmp = SRP1038A-470M;
 IdModule  = L_10;
 EndCmp
 
