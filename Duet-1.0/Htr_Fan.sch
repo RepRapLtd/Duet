@@ -40,7 +40,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 7
 Title "Duet"
-Date "8 oct 2015"
+Date "17 oct 2015"
 Rev "0.7"
 Comp "Think3DPrint3D, RepRapPro"
 Comment1 "CERN OSH License 1.2"
