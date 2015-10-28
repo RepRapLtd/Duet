@@ -1,10 +1,10 @@
-eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
-
+eeschema (2013-jul-07)-stable  >> Creation date: Wed Oct 28 17:44:33 2015
 #Cmp ( order = Reference )
+| C1         10u         
 | C2         0u01        
-| C3         100u        
+| C3         220u        
 | C4         10u         
-| C5         0u33        
+| C5         0.33u       
 | C6         47n         
 | C7         10u         
 | C8         22p         
@@ -95,6 +95,8 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | C93        0u1         
 | C94        100u        
 | C95        1u          
+| C96        220u        
+| C97        220u        
 | D1         SS3P4       
 | D2         SS14M       
 | D3         LED         
@@ -109,47 +111,53 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | D12        LED         
 | D13        SS14M       
 | D14        SS14M       
-| D15        VIN         
-| D16        3.3V        
-| D17        5V+         
+| D15        blue LED    
+| D16        green LED   
+| D17        red LED     
+| D18        red LED     
+| D19        SS54        
 | J1         EXPANSION   
+| J2         CONN2       
 | J3         VREF        
-| J4         BED HEATER  
+| J4         V+          
 | J5         BED TEMP    
+| J6         CONN2       
 | J7         Z MOT/STOP  
 | J8         Y MOT/STOP  
 | J9         X MOT/STOP  
 | J10        E0 MOT/STOP 
-| J11        E0 HEAT/TEMP/FAN
+| J11        BED-        
+| J12        V+          
+| J13        GND         
+| J14        BED POWER   
 | J15        uSDHC       
 | J16        VREF        
 | J17        VREF        
 | J18        VREF        
 | J19        ETHERNET    
-| J20        5V_PS       
-| J21        JTAG        
-| J22        USB         
-| J23        POWER IN    
+| J20        POWER       
+| J21        12V_ref     
+| J22        POWER       
+| J23        Z MOT 2     
 | J24        GND  V_IN   
+| J25        PS 5V       
 | J26        GND         
 | J27        TP          
 | J28        Probe       
+| J29        USB         
+| J30        5V_ref      
+| J31        3v3_ref     
+| JP1        EXT_5V_EN   
 | JP9        5V_EN       
-| JP10       ATX_5V_EN   
-| L1         CM_CHOKE    
+| L1         SRP1038A-470M
 | L2         Ferrite Bead
 | L3         100Mhz      
 | L4         100Mhz      
 | L5         100Mhz      
 | L6         100Mhz      
 | L7         100Mhz      
-| L8         CM_CHOKE    
-| L9         CM_CHOKE    
-| L10        CM_CHOKE    
-| L11        CM_CHOKE    
-| L12        CM_CHOKE    
-| L13        CM_CHOKE    
-| L14        CM_CHOKE    
+| P1         CONN_4      
+| P2         CONN_4      
 | R1         680R        
 | R2         39R 1%      
 | R3         39R 1%      
@@ -204,13 +212,13 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | R52        100k        
 | R53        100k        
 | R54        2k7         
-| R55        2k7         
+| R55        4k7         
 | R56        100R        
 | R57        100R        
 | R58        100R        
 | R59        100R        
-| R60        220R        
-| R61        220R        
+| R60        4K7         
+| R61        470R        
 | R62        10K         
 | R63        10K         
 | R64        10K         
@@ -231,10 +239,8 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | R79        100k        
 | R80        10K         
 | R81        10K         
-| R82        0R          
 | R83        0R          
-| S1         RESET       
-| S2         MCU ERASE   
+| R84        470R        
 | SJ1        MS2         
 | SJ2        MS1         
 | SJ3        MS2         
@@ -252,35 +258,42 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | TR7        BSH105      
 | U1         ATSAM3X8E   
 | U2         TC2117-3.3VDBTR
-| U3         MC7805CDTG  
+| U3         LM2596      
 | U4         KSZ8051RNL  
 | U5         A4982SLPTR  
 | U6         A4982SLPTR  
 | U7         A4982SLPTR  
 | U8         A4982SLPTR  
 | U9         MCP44X1     
-| U10        SP2525A     
+| U10        SP2525A-1   
 | X1         CRYSTAL_4PIN
 | X2         CRYSTAL_4PIN
 #End Cmp
 
 #Cmp ( order = Value )
-| 0.1u         C91       
-| 0R           R30       
-| 0R           R31       
-| 0R           R42       
-| 0R           R43       
-| 0R           R82       
-| 0R           R83       
-| 0R1          R32       
-| 0R1          R33       
-| 0R1          R34       
-| 0R1          R35       
-| 0R1          R44       
-| 0R1          R45       
-| 0R1          R46       
-| 0R1          R47       
+| 10p          C44       
+| 10p          C45       
+| 10p          C65       
+| 22p          C8        
+| 22p          C9        
 | 0u01         C2        
+| 10nF         C90       
+| 47n          C6        
+| 47n          C54       
+| 47n          C63       
+| 47n          C73       
+| 47n          C74       
+| 47n          C79       
+| 47n          C80       
+| 47n          C81       
+| 47n          C82       
+| 47n          C83       
+| 47n          C84       
+| 47n          C85       
+| 47n          C86       
+| 47n          C87       
+| 47n          C88       
+| 47n          C89       
 | 0u1          C14       
 | 0u1          C15       
 | 0u1          C16       
@@ -319,6 +332,7 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | 0u1          C76       
 | 0u1          C77       
 | 0u1          C78       
+| 0.1u         C91       
 | 0u1          C93       
 | 0u22         C20       
 | 0u22         C21       
@@ -328,164 +342,37 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | 0u22         C31       
 | 0u22         C36       
 | 0u22         C37       
-| 0u33         C5        
-| 100k         R26       
-| 100k         R28       
-| 100k         R36       
-| 100k         R38       
-| 100k         R40       
-| 100k         R49       
-| 100k         R52       
-| 100k         R53       
-| 100k         R77       
-| 100k         R78       
-| 100k         R79       
-| 100Mhz       L3        
-| 100Mhz       L4        
-| 100Mhz       L5        
-| 100Mhz       L6        
-| 100Mhz       L7        
-| 100R         R56       
-| 100R         R57       
-| 100R         R58       
-| 100R         R59       
-| 100u         C3        
+| 0.33u        C5        
+| 1u           C13       
+| 1u           C95       
+| 2u2          C12       
+| 2u2          C58       
+| 4u7          C59       
+| 4u7          C61       
+| 4u7          C66       
+| 4u7          C68       
+| 10u          C4        
+| 10u          C7        
+| 10u          C18       
+| 10u          C19       
+| 10u          C47       
+| 10u          C1        
+| 22u          C10       
+| 22u          C11       
 | 100u         C22       
 | 100u         C23       
 | 100u         C32       
 | 100u         C33       
 | 100u         C92       
 | 100u         C94       
-| 10k          R4        
-| 10k          R5        
-| 10k          R27       
-| 10k          R29       
-| 10k          R39       
-| 10k          R41       
-| 10K          R62       
-| 10K          R63       
-| 10K          R64       
-| 10k          R66       
-| 10K          R80       
-| 10K          R81       
-| 10nF         C90       
-| 10p          C44       
-| 10p          C45       
-| 10p          C65       
-| 10u          C4        
-| 10u          C7        
-| 10u          C18       
-| 10u          C19       
-| 10u          C47       
-| 1k           R11       
-| 1k           R13       
-| 1u           C13       
-| 1u           C95       
-| 220R         R16       
-| 220R         R17       
-| 220R         R20       
-| 220R         R23       
-| 220R         R25       
-| 220R         R60       
-| 220R         R61       
-| 22p          C8        
-| 22p          C9        
-| 22u          C10       
-| 22u          C11       
-| 2k7          R37       
-| 2k7          R54       
-| 2k7          R55       
-| 2u2          C12       
-| 2u2          C58       
-| 3.3V         D16       
-| 33R          R6        
-| 33R          R7        
-| 33R          R8        
-| 33R          R9        
-| 33R          R10       
-| 39R 1%       R2        
-| 39R 1%       R3        
-| 470R         R18       
-| 470R         R22       
-| 470R         R24       
-| 47K          R73       
-| 47K          R74       
-| 47K          R75       
-| 47K          R76       
-| 47n          C6        
-| 47n          C54       
-| 47n          C63       
-| 47n          C73       
-| 47n          C74       
-| 47n          C79       
-| 47n          C80       
-| 47n          C81       
-| 47n          C82       
-| 47n          C83       
-| 47n          C84       
-| 47n          C85       
-| 47n          C86       
-| 47n          C87       
-| 47n          C88       
-| 47n          C89       
-| 4k7          R12       
-| 4k7          R14       
-| 4K7          R19       
-| 4K7          R21       
-| 4k7          R50       
-| 4k7          R51       
-| 4k7          R65       
-| 4k7          R67       
-| 4k7          R68       
-| 4u7          C59       
-| 4u7          C61       
-| 4u7          C66       
-| 4u7          C68       
-| 5V+          D17       
-| 5V_EN        JP9       
-| 5V_PS        J20       
-| 680R         R1        
-| 680R         R69       
-| 680R         R70       
-| 680R         R71       
-| 680R         R72       
-| 6k49  1%     R15       
-| 6k8          R48       
-| A4982SLPTR   U5        
-| A4982SLPTR   U6        
-| A4982SLPTR   U7        
-| A4982SLPTR   U8        
-| ATSAM3X8E    U1        
-| ATX_5V_EN    JP10      
-| BED HEATER   J4        
-| BED TEMP     J5        
-| BSH105       TR1       
-| BSH105       TR3       
-| BSH105       TR5       
-| BSH105       TR7       
-| CM_CHOKE     L1        
-| CM_CHOKE     L8        
-| CM_CHOKE     L9        
-| CM_CHOKE     L10       
-| CM_CHOKE     L11       
-| CM_CHOKE     L12       
-| CM_CHOKE     L13       
-| CM_CHOKE     L14       
-| CRYSTAL_4PIN X1        
-| CRYSTAL_4PIN X2        
-| E0 HEAT/TEMP/FAN J11       
-| E0 MOT/STOP  J10       
-| ETHERNET     J19       
-| EXPANSION    J1        
-| Ferrite Bead L2        
-| GND          J26       
-| GND  V_IN    J24       
-| IPD036N04L   TR2       
-| IPD036N04L   TR4       
-| IPD036N04L   TR6       
-| JTAG         J21       
-| KSZ8051RNL   U4        
+| 220u         C3        
+| 220u         C96       
+| 220u         C97       
+| SS3P4        D1        
+| SS14M        D2        
 | LED          D3        
+| TS4148       D4        
+| TS4148       D5        
 | LED          D6        
 | LED          D7        
 | LED          D8        
@@ -493,39 +380,165 @@ eeschema (2011-05-25)-stable  >> Creation date: Wed 17 Sep 2014 15:25:29 BST
 | LED          D10       
 | LED          D11       
 | LED          D12       
-| MC7805CDTG   U3        
-| MCP44X1      U9        
-| MCU ERASE    S2        
-| MS1          SJ2       
-| MS1          SJ4       
-| MS1          SJ6       
-| MS1          SJ8       
-| MS2          SJ1       
-| MS2          SJ3       
-| MS2          SJ5       
-| MS2          SJ7       
-| POWER IN     J23       
-| Probe        J28       
-| RESET        S1        
-| SP2525A      U10       
-| SS14M        D2        
 | SS14M        D13       
 | SS14M        D14       
-| SS3P4        D1        
-| TC2117-3.3VDBTR U2        
-| TP           J27       
-| TS4148       D4        
-| TS4148       D5        
-| USB          J22       
-| uSDHC        J15       
-| VIN          D15       
+| blue LED     D15       
+| green LED    D16       
+| red LED      D17       
+| red LED      D18       
+| SS54         D19       
+| EXPANSION    J1        
+| CONN2        J2        
 | VREF         J3        
+| V+           J4        
+| BED TEMP     J5        
+| CONN2        J6        
+| Z MOT/STOP   J7        
+| Y MOT/STOP   J8        
+| X MOT/STOP   J9        
+| E0 MOT/STOP  J10       
+| BED-         J11       
+| V+           J12       
+| GND          J13       
+| BED POWER    J14       
+| uSDHC        J15       
 | VREF         J16       
 | VREF         J17       
 | VREF         J18       
-| X MOT/STOP   J9        
-| Y MOT/STOP   J8        
-| Z MOT/STOP   J7        
+| ETHERNET     J19       
+| POWER        J20       
+| POWER        J22       
+| Z MOT 2      J23       
+| GND  V_IN    J24       
+| PS 5V        J25       
+| GND          J26       
+| TP           J27       
+| Probe        J28       
+| USB          J29       
+| 12V_ref      J21       
+| 5V_ref       J30       
+| 3v3_ref      J31       
+| EXT_5V_EN    JP1       
+| 5V_EN        JP9       
+| 100Mhz       L3        
+| 100Mhz       L4        
+| 100Mhz       L5        
+| 100Mhz       L6        
+| 100Mhz       L7        
+| Ferrite Bead L2        
+| SRP1038A-470M L1        
+| CONN_4       P1        
+| CONN_4       P2        
+| 0R           R30       
+| 0R           R31       
+| 0R           R42       
+| 0R           R43       
+| 0R           R83       
+| 0R1          R32       
+| 0R1          R33       
+| 0R1          R34       
+| 0R1          R35       
+| 0R1          R44       
+| 0R1          R45       
+| 0R1          R46       
+| 0R1          R47       
+| 33R          R6        
+| 33R          R7        
+| 33R          R8        
+| 33R          R9        
+| 33R          R10       
+| 39R 1%       R2        
+| 39R 1%       R3        
+| 100R         R56       
+| 100R         R57       
+| 100R         R58       
+| 100R         R59       
+| 220R         R20       
+| 220R         R23       
+| 220R         R25       
+| 220R         R16       
+| 220R         R17       
+| 470R         R18       
+| 470R         R22       
+| 470R         R24       
+| 470R         R61       
+| 470R         R84       
+| 680R         R1        
+| 680R         R69       
+| 680R         R70       
+| 680R         R71       
+| 680R         R72       
+| 1k           R11       
+| 1k           R13       
+| 2k7          R37       
+| 2k7          R54       
+| 4K7          R19       
+| 4K7          R21       
+| 4k7          R50       
+| 4k7          R51       
+| 4k7          R55       
+| 4K7          R60       
+| 4k7          R65       
+| 4k7          R67       
+| 4k7          R68       
+| 4k7          R12       
+| 4k7          R14       
+| 6k49  1%     R15       
+| 6k8          R48       
+| 10k          R27       
+| 10k          R29       
+| 10k          R39       
+| 10k          R41       
+| 10K          R62       
+| 10k          R66       
+| 10K          R80       
+| 10K          R81       
+| 10k          R4        
+| 10k          R5        
+| 10K          R63       
+| 10K          R64       
+| 47K          R73       
+| 47K          R74       
+| 47K          R75       
+| 47K          R76       
+| 100k         R26       
+| 100k         R28       
+| 100k         R36       
+| 100k         R40       
+| 100k         R49       
+| 100k         R52       
+| 100k         R53       
+| 100k         R77       
+| 100k         R78       
+| 100k         R79       
+| 100k         R38       
+| MS2          SJ1       
+| MS1          SJ2       
+| MS2          SJ3       
+| MS1          SJ4       
+| MS2          SJ5       
+| MS1          SJ6       
+| MS2          SJ7       
+| MS1          SJ8       
+| BSH105       TR1       
+| IPD036N04L   TR2       
+| BSH105       TR3       
+| IPD036N04L   TR4       
+| BSH105       TR5       
+| IPD036N04L   TR6       
+| BSH105       TR7       
+| TC2117-3.3VDBTR U2        
+| LM2596       U3        
+| KSZ8051RNL   U4        
+| A4982SLPTR   U5        
+| A4982SLPTR   U6        
+| A4982SLPTR   U7        
+| A4982SLPTR   U8        
+| MCP44X1      U9        
+| SP2525A-1    U10       
+| ATSAM3X8E    U1        
+| CRYSTAL_4PIN X1        
+| CRYSTAL_4PIN X2        
 #End Cmp
 
 #End List
